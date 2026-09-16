@@ -1,0 +1,20 @@
+{
+	"required": true,
+	"package": "kozy1kove.tufferfishtweaks.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"FoodSaturationMixin",
+		"FoodHealMixin"
+	],
+	"client": [
+		"client.HungerBarHudMixin",
+		"client.ArmorRelocateMixin",
+		"client.HudAccessorMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
