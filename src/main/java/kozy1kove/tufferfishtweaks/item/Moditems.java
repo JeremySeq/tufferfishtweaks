@@ -7,10 +7,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import org.apache.commons.lang3.math.IEEE754rUtils;
 
 import java.util.function.Function;
 
@@ -22,16 +20,12 @@ public class Moditems {
     public static final Item CHORIUM = registerItem("chorium", Item::new);
     public static final Item LAPIS_BOOK = registerItem("lapis_book", Item::new);
 
-
-
-
+    public static final Item COW_HEAD = registerItem("cow_head", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TufferfishTweaks.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TufferfishTweaks.MOD_ID, name)))));
     }
-
-
 
     public static void  registerModItems() {
         TufferfishTweaks.LOGGER.info("registering Mod Items for" + TufferfishTweaks.MOD_ID);

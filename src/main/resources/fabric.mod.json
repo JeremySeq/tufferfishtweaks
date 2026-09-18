@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"kozy1kove.tufferfishtweaks.TufferfishTweaksDataGenerator"
+		],
+		"client": [
+			"kozy1kove.tufferfishtweaks.client.TufferfishTweaksClient"
 		]
 	},
 	"mixins": [

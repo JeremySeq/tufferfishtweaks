@@ -2,6 +2,7 @@ package kozy1kove.tufferfishtweaks;
 
 import kozy1kove.tufferfishtweaks.block.ModBlocks;
 import kozy1kove.tufferfishtweaks.item.Moditems;
+import kozy1kove.tufferfishtweaks.network.ModNetworking;
 import kozy1kove.tufferfishtweaks.worldgen.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,6 +18,7 @@ public class TufferfishTweaks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("The Tweaks are Tuff fr");
+		ModNetworking.init();
 		Moditems.registerModItems();
 		ModBlocks.registerModBlocks();
 
