@@ -1,6 +1,9 @@
 package kozy1kove.tufferfishtweaks;
 
 import kozy1kove.tufferfishtweaks.block.ModBlocks;
+import kozy1kove.tufferfishtweaks.enchanting.EnchantingTableOverride;
+import kozy1kove.tufferfishtweaks.enchanting.ModMenuTypes;
+import kozy1kove.tufferfishtweaks.enchanting.ModRecipes;
 import kozy1kove.tufferfishtweaks.item.Moditems;
 import kozy1kove.tufferfishtweaks.network.ModNetworking;
 import kozy1kove.tufferfishtweaks.worldgen.gen.ModWorldGeneration;
@@ -21,6 +24,9 @@ public class TufferfishTweaks implements ModInitializer {
 		ModNetworking.init();
 		Moditems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModRecipes.init();
+		ModMenuTypes.init();
+		EnchantingTableOverride.init();
 
 		ModWorldGeneration.generateModWorldGen();
 	}

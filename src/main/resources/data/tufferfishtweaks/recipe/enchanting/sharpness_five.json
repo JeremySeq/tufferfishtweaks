@@ -1,0 +1,6 @@
+{
+  "type": "tufferfishtweaks:enchanting",
+  "block": "minecraft:redstone_block",
+  "item": "minecraft:blaze_powder",
+  "enchantment": "minecraft:sharpness"
+}
